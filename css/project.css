@@ -1,0 +1,115 @@
+/* Center the main section */
+main {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Share Tech";
+}
+
+section {
+  text-align: center;
+  /* center text inside section */
+}
+
+h2 {
+  font-size: 3.0rem;
+  /* bigger heading */
+  font-weight: 800;
+  /* bold */
+  margin-bottom: 1rem;
+}
+
+p {
+  color: var(--text-color);
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+}
+
+a {
+  color: var(--tlink-color);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.image-stack {
+  display: flex;
+  flex-direction: column;
+  /* stack vertically */
+  align-items: center;
+  /* center images */
+  gap: 1rem;
+  /* vertical space between images */
+  max-width: 65%;
+  /* control how wide the images can be */
+  margin: 0 auto;
+  /* equal gap left & right */
+  padding: 1rem;
+  /* small padding around */
+}
+
+.image-stack img {
+  width: 100%;
+  /* fill container */
+  height: auto;
+}
+
+
+.main-video {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+/* background video */
+.top-video {
+  position: inherit;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+/* dark overlay */
+.video-dark-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.45);
+  display: flex;
+  justify-content: center;
+  /* center horizontally */
+  align-items: center;
+  /* center vertically */
+  text-align: center;
+  z-index: 1;
+}
+
+/* overlay text */
+.video-overlay {
+  color: white;
+  z-index: 2;
+}
+
+.video-title {
+  font-size: 7vw;
+  mix-blend-mode: difference;
+}
+
+.video-sub-title {
+  font-size: 1.5vw;
+}
+
+.space {
+  margin-top: 75px;
+}

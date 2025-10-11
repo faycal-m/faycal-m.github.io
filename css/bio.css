@@ -1,0 +1,261 @@
+main {
+  margin-top: 125px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Share Tech";
+}
+
+section {
+  text-align: center;
+  /* center text inside section */
+}
+
+h2 {
+  font-size: 2.0rem;
+  /* bigger heading */
+  font-weight: 800;
+  /* bold */
+  margin-bottom: 1rem;
+}
+
+p {
+  color: var(--text-color);
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+}
+
+a {
+  color: var(--link-color);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.bio {
+  margin-top: 25px;
+  margin-bottom: 50px;
+}
+
+.about {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  /* photo left, text right */
+  gap: 2rem;
+  align-items: center;
+  max-width: 1000px;
+  margin: 3rem auto;
+  padding: 0 1rem;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  /* force left alignment */
+}
+
+.about-content h2 {
+  margin: 0 0 1rem 0;
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-align: left;
+}
+
+.about-content p {
+  margin: 0 0 1rem 0;
+  line-height: 1.6;
+  font-size: 1rem;
+  color: var(--text-color);
+  text-align: left;
+}
+
+/* Profile image styling */
+.about-photo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-photo img {
+  width: 250px;
+  /* bigger */
+  height: 250px;
+  /* bigger */
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+  border: 5px solid rgba(255, 255, 255, 0.9);
+  background: #eee;
+}
+
+@media (max-width: 800px) {
+  .about {
+    grid-template-columns: 1fr;
+    text-align: left;
+    padding: 0 1.5rem;
+    /* adds breathing room on sides */
+  }
+
+  .about-photo {
+    margin: 0 auto 1.5rem auto;
+    justify-content: center;
+  }
+
+  .about-content {
+    text-align: left;
+  }
+
+  .about-content h2 {
+    margin-left: 0.5rem;
+    /* slight indent for consistency */
+  }
+
+  .about-content p {
+    text-align: left;
+    margin: 0.5rem 0;
+    line-height: 1.6;
+    padding: 0 0.5rem;
+    /* prevents text from touching edges */
+  }
+}
+
+.skills-list {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  /* 4 columns on desktop */
+  gap: 0.5rem 2rem;
+  justify-content: center;
+  margin: 0 auto;
+  text-align: left;
+  margin-top: 25px;
+  margin-bottom: 50px;
+}
+
+.skills-list div {
+  white-space: nowrap;
+  /* prevents breaking skills into multiple lines */
+}
+
+/* --- Responsive layout --- */
+@media (max-width: 768px) {
+  .skills-list {
+    grid-template-columns: repeat(2, auto);
+    /* 2 columns on tablets/phones */
+    gap: 0.5rem 1.5rem;
+    padding: 0 20px;
+    /* add side spacing only on phones/tablets */
+  }
+}
+
+@media (max-width: 480px) {
+  .skills-list {
+    grid-template-columns: repeat(2, 1fr);
+    /* equal-width columns on small phones */
+    padding: 0 20px;
+    /* consistent margin for small screens */
+  }
+}
+
+.software-list {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 1rem 2rem;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 25px;
+  margin-bottom: 50px;
+}
+
+.software-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.software-item img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+/* --- Responsive layout --- */
+@media (max-width: 768px) {
+  .software-list {
+    grid-template-columns: repeat(2, auto);
+    gap: 1rem 1.5rem;
+    padding: 0 20px;
+    /* add side spacing only on phones/tablets */
+  }
+}
+
+@media (max-width: 480px) {
+  .software-list {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 50px;
+    /* consistent margin for small phones */
+  }
+}
+
+.timeline {
+  position: relative;
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: #ccc;
+  /* timeline line */
+  transform: translateX(-50%);
+}
+
+.timeline-item {
+  display: flex;
+  justify-content: flex-start;
+  margin: 2rem 0;
+  position: relative;
+}
+
+.timeline-item:nth-child(odd) {
+  flex-direction: row-reverse;
+  text-align: right;
+}
+
+.timeline-date {
+  flex: 1;
+  padding: 0 1rem;
+  font-weight: bold;
+  color: var(--link-color);
+
+}
+
+.timeline-content {
+  flex: 1;
+  padding: 0 1rem;
+}
+
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  top: 0.5rem;
+  left: 50%;
+  width: 16px;
+  height: 16px;
+  background: #fff;
+  border: 2px solid #555;
+  border-radius: 50%;
+  transform: translateX(-50%);
+}

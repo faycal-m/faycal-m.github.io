@@ -1,0 +1,43 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# Node / package manager files (if you use npm or yarn for tooling)
+node_modules/
+package-lock.json
+yarn.lock
+
+# Build or distribution folders (ignored)
+dist/
+build/
+
+# Custom ignored folder
+private/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Editor / IDE settings
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
+*.swo
+
+# Cache files
+.cache/
+.parcel-cache/
+.temp/
+
+# Environment files (if used)
+.env
+.env.local
+.env.*.local

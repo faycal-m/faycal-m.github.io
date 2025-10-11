@@ -1,0 +1,29 @@
+/* Reset & base */
+* {
+   margin: 0; padding: 0; box-sizing: border-box; 
+}
+html, body {
+  height: 100%;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: "Share Tech", Arial, sans-serif;
+  font-weight: 600;
+  background-color: #121212;
+  color: #f0f0f0;
+  line-height: 1.6;
+}
+a {
+   color: #dcdcdc; text-decoration: none; 
+}
+a:hover {
+  text-decoration: underline; 
+}
+
+/* Sections */
+main {
+  flex: 1;
+  margin: 0;
+  padding: 0;
+}

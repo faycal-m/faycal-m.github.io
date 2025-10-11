@@ -1,0 +1,33 @@
+/* Center the main section */
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Share Tech";
+}
+
+section {
+  text-align: center; /* center text inside section */
+}
+
+h2 {
+  font-size: 3.0rem; /* bigger heading */
+  font-weight: 800;  /* bold */
+  margin-bottom: 1rem;
+}
+
+p {
+  color: var(--text-color);
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+}
+
+a {
+  color: var(--tlink-color);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+a:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,51 @@
+/* Portfolio grid & cards (page layout only) */
+main {
+  flex: 1;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+section h2 {
+  margin: 2rem 1rem;
+  font-size: 2rem;
+  padding-bottom: 0.5rem;
+  text-align: left;
+  /* same as your original */
+  width: 100%;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* exactly 3 columns */
+  gap: 1rem;
+  width: calc(100% - 2rem);
+  /* same as your first CSS */
+  margin: 0 auto;
+  /* centers the grid */
+  padding: 0;
+  box-sizing: border-box;
+  /* makes width calc precise */
+  margin-top: 125px;
+}
+
+/* Responsive grid for smaller screens */
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    /* 2 columns on phones/tablets */
+    gap: 1rem;
+    width: calc(100% - 2rem);
+    padding: 0 0.5rem;
+    /* small side spacing */
+  }
+}
+
+@media (max-width: 480px) {
+  .grid {
+    grid-template-columns: 1fr;
+    /* single column on small phones */
+    padding: 0 1rem;
+  }
+}
