@@ -141,7 +141,7 @@ tpl.innerHTML = `
   </style>
 
   <header>
-    <h1>HOME</h1>
+    <h1>FAYCAL</h1>
     <div class="right-side">
       <nav>
         <a href="/index.html">PROJECTS</a>
