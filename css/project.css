@@ -113,3 +113,9 @@ a:hover {
 .space {
   margin-top: 75px;
 }
+
+@media (max-aspect-ratio: 4/3) {
+  .image-stack {
+    max-width: 100%;
+  }
+}

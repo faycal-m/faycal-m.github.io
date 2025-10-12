@@ -30,8 +30,7 @@ section h2 {
   margin-top: 125px;
 }
 
-/* Responsive grid for smaller screens */
-@media (max-width: 768px) {
+@media (max-aspect-ratio: 4/3) {
   .grid {
     grid-template-columns: repeat(2, 1fr);
     /* 2 columns on phones/tablets */
@@ -42,7 +41,7 @@ section h2 {
   }
 }
 
-@media (max-width: 480px) {
+@media (max-aspect-ratio: 9/16) {
   .grid {
     grid-template-columns: 1fr;
     /* single column on small phones */

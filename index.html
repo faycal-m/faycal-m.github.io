@@ -4,9 +4,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bio | 3D Art Portfolio</title>
+  <title>Contact | 3D Art Portfolio</title>
   <link rel="stylesheet" href="/css/base.css">
-  <link rel="stylesheet" href="/css/bio.css">
+  <link rel="stylesheet" href="/css/portfolio.css">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,150 +15,41 @@
 
   <script src="/js/header.js" defer></script>
   <script src="/js/footer.js" defer></script>
+  <script src="/js/card.js" defer></script>
+
 </head>
 
 <body>
   <custom-header></custom-header>
   <main>
-    <h2>About Me</h2>
-    <section class="about" aria-label="About me">
-      <div class="about-photo">
-        <img src="/images/profile.png" alt="Profile photo">
-      </div>
-      <div class="about-content">
-        <p>
-          I am a 3D artist and developer with experience in character art, environments, and interactive projects.
-          My work spans indie game development, freelancing, and co founded a studio, giving me both creative and
-          technical insight.
-        </p>
-        <p>
-          I believe 3D content is a powerful tool beyond entertainment, helping bring ideas to life across industries.
-          Whether I am crafting assets or directing projects, I value adaptability, collaboration, and clear
-          communication.
-        </p>
-        <p>
-          I am always open to connecting and exploring how I can contribute to new projects.
-        </p>
-      </div>
-    </section>
-    <!-- Skills Section -->
-    <section aria-label="Skills">
-      <h2>Skills</h2>
-      <div class="skills-list">
-        <div>3D Modeling</div>
-        <div>Digital Sculpting</div>
-        <div>Character Modeling</div>
-        <div>Hard Surface Modeling</div>
-        <div>Creature Modeling</div>
-        <div>Environment Modeling</div>
-        <div>Weapon Modeling</div>
-        <div>Prop Modeling</div>
-        <div>Texturing</div>
-        <div>PBR Texturing</div>
-        <div>Look Development</div>
-        <div>Shading & Lighting</div>
-      </div>
-    </section>
-    <!-- Software Section -->
-    <section aria-label="Software">
-      <h2>Software</h2>
-      <div class="software-list">
-        <div class="software-item">
-          <img src="/images/software-icons/blender.svg" alt="Blender 3D">
-          <span>Blender 3D</span>
-        </div>
-        <div class="software-item">
-          <img src="/images/software-icons/plasticity.png" alt="Plasticity">
-          <span>Plasticity</span>
-        </div>
-        <div class="software-item">
-          <img src="/images/software-icons/zbrush.png" alt="Zbrush">
-          <span>Zbrush</span>
-        </div>
-        <div class="software-item">
-          <img src="/images/software-icons/unity.png" alt="Unity 3D">
-          <span>Unity 3D</span>
-        </div>
-        <div class="software-item">
-          <img src="/images/software-icons/unreal-engine.png" alt="Unreal Engine">
-          <span>Unreal Engine</span>
-        </div>
-        <div class="software-item">
-          <img src="/images/software-icons/marmoset-toolbag.png" alt="Marmoset Toolbag">
-          <span>Marmoset 5</span>
-        </div>
-        <div class="software-item">
-          <img src="/images/software-icons/gimp.svg" alt="GIMP">
-          <span>GIMP</span>
-        </div>
-        <div class="software-item">
-          <img src="/images/software-icons/krita.svg" alt="Krita">
-          <span>Krita</span>
-        </div>
-        <div class="software-item">
-          <img src="/images/software-icons/inkscape.svg" alt="Inkscape">
-          <span>Inkscape</span>
-        </div>
-        <div class="software-item">
-          <img src="/images/software-icons/adobe-photoshop.svg" alt="Adobe Photoshop">
-          <span>Photoshop</span>
-        </div>
-        <div class="software-item">
-          <img src="/images/software-icons/substance-3d-designer.png" alt="Substance 3D Designer">
-          <span>Adobe Designer</span>
-        </div>
-        <div class="software-item">
-          <img src="/images/software-icons/substance-3d-painter.png" alt="Substance 3D Painter">
-          <span>Adobe Painter</span>
-        </div>
-        <div class="software-item">
-          <img src="/images/software-icons/c-sharp.png" alt="C#">
-          <span>C# & .Net</span>
-        </div>
-        <div class="software-item">
-          <img src="/images/software-icons/preforce-p4.svg" alt="Preforce P4">
-          <span>Preforce P4</span>
-        </div>
-        <div class="software-item">
-          <img src="/images/software-icons/git.png" alt="Git">
-          <span>Git</span>
-        </div>
-      </div>
-    </section>
-    <section aria-label="Experience">
-      <h2>Experience</h2>
-      <div class="timeline">
-        <div class="timeline-item">
-          <div class="timeline-date">Jan 2025 – Present</div>
-          <div class="timeline-content">
-            <h3>Co-founder & 3D Art Director</h3>
-            <p>Neat Vision – Fulltime</p>
-          </div>
-        </div>
+    <section>
+      <div class="grid">
+        <project-card url="/projects/keyboard.html" image="/images/products/Keyboard01.png" name="Mechanical Keyboard">
+        </project-card>
 
-        <div class="timeline-item">
-          <div class="timeline-date">Mar 2022 – Sep 2024</div>
-          <div class="timeline-content">
-            <h3>3D Character Artist for Games & Animation</h3>
-            <p>Blender – Freelance</p>
-          </div>
-        </div>
+        <project-card url="/projects/toothbrush.html" image="/images/products/Keyboard02.png" name="Toothbrush">
+        </project-card>
 
-        <div class="timeline-item">
-          <div class="timeline-date">Jan 2019 – Feb 2022</div>
-          <div class="timeline-content">
-            <h3>3D Configurator Developer</h3>
-            <p>Modum – Contract</p>
-          </div>
-        </div>
+        <project-card url="/projects/makeup.html" image="/images/products/Keyboard09.png" name="Makeup">
+        </project-card>
 
-        <div class="timeline-item">
-          <div class="timeline-date">Mar 2017 – Nov 2019</div>
-          <div class="timeline-content">
-            <h3>Indie Game Developer</h3>
-            <p>SpawnSoft, LLC – Fulltime</p>
-          </div>
-        </div>
+        <project-card url="/projects/cookies.html" image="/images/products/Keyboard08.png" name="Cookies">
+        </project-card>
+
+        <project-card url="/projects/smart-watch.html" image="/images/products/Keyboard04.png" name="Smart Watch">
+        </project-card>
+
+        <project-card url="/projects/tablet.html" image="/images/products/Keyboard10.png" name="Tablet">
+        </project-card>
+
+        <project-card url="/projects/purse.html" image="/images/products/Keyboard03.png" name="Purse">
+        </project-card>
+
+        <project-card url="/projects/mouse.html" image="/images/products/Keyboard05.png" name="Mouse">
+        </project-card>
+
+        <project-card url="/projects/candle.html" image="/images/products/Keyboard07.png" name="Candle">
+        </project-card>
       </div>
     </section>
   </main>

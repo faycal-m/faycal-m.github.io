@@ -144,8 +144,8 @@ tpl.innerHTML = `
     <h1>HOME</h1>
     <div class="right-side">
       <nav>
-        <a href="/index.html">BIO</a>
-        <a href="/3d-product-art.html">3D PRODUCT ART</a>
+        <a href="/index.html">PROJECTS</a>
+        <a href="/bio.html">BIO</a>
         <a href="/contact.html">CONTACT</a>
       </nav>
       <button class="theme-toggle" aria-label="Toggle theme">
