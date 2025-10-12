@@ -53,7 +53,7 @@ footerTemplate.innerHTML = `
     <div class="footer-content">
       <p>2025 &copy; Faycal</p>
       <div class="social">
-        <a href="https://www.instagram.com/faycal.art_/" target="_blank">
+        <a href="https://www.instagram.com/faycal_arts/" target="_blank">
           <img src="/images/icons/instagram.svg" alt="Instagram">
         </a>
         <a href="https://www.linkedin.com/in/faycal-art/" target="_blank">

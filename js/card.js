@@ -90,7 +90,7 @@ cardTemplate.innerHTML = `
         <p></p>
         <div class="breakdown">
           <span>View Breakdown</span>
-          <img src="/images/icons/down.svg" alt="Arrow icon">
+          <img src="/images/icons/down.svg" loading="lazy" alt="Arrow icon">
         </div>
       </div>
     </a>
@@ -101,7 +101,7 @@ class ProjectCard extends HTMLElement {
   constructor() {
     super();
     this.attachShadow({ mode: "open" })
-        .appendChild(cardTemplate.content.cloneNode(true));
+      .appendChild(cardTemplate.content.cloneNode(true));
   }
 
   connectedCallback() {
@@ -129,7 +129,7 @@ class ProjectCard extends HTMLElement {
       source.type = "video/mp4";
       vid.appendChild(source);
       slot.replaceWith(vid);
-    } 
+    }
     // Otherwise, use <img>
     else if (image) {
       const img = document.createElement("img");
