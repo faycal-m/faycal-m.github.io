@@ -56,7 +56,7 @@ footerTemplate.innerHTML = `
         <a href="https://www.instagram.com/faycal.art_/" target="_blank">
           <img src="/images/icons/instagram.svg" alt="Instagram">
         </a>
-        <a href="https://www.linkedin.com/in/faycal-mouffouk/" target="_blank">
+        <a href="https://www.linkedin.com/in/faycal-art/" target="_blank">
           <img src="/images/icons/linkedin.svg" alt="LinkedIn">
         </a>
         <a href="https://x.com/faycal_art" target="_blank">
