@@ -53,13 +53,13 @@ footerTemplate.innerHTML = `
     <div class="footer-content">
       <p>2025 &copy; Faycal</p>
       <div class="social">
-        <a href="https://www.instagram.com/faycal.3d" target="_blank">
+        <a href="https://www.instagram.com/faycal.art_/" target="_blank">
           <img src="/images/icons/instagram.svg" alt="Instagram">
         </a>
         <a href="https://www.linkedin.com/in/faycal-mouffouk/" target="_blank">
           <img src="/images/icons/linkedin.svg" alt="LinkedIn">
         </a>
-        <a href="https://x.com/faycal_3d" target="_blank">
+        <a href="https://x.com/faycal_art" target="_blank">
           <img src="/images/icons/x.svg" alt="ArtStation">
         </a>
       </div>
@@ -71,7 +71,7 @@ class CustomFooter extends HTMLElement {
   constructor() {
     super();
     this.attachShadow({ mode: "open" })
-        .appendChild(footerTemplate.content.cloneNode(true));
+      .appendChild(footerTemplate.content.cloneNode(true));
   }
 }
 
